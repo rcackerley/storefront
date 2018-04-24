@@ -3,3 +3,44 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.grid-layout {
+  display: flex;
+
+}
+
+nav {
+  background-color: #5b5657;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.brand-logo {
+  margin-left: 20px
+}
+
+.rails {
+  padding-right: 50px;
+  padding-left: 20px;
+  height: stretch;
+  background-color: #c8c8c8;
+  width:200px;
+}
+
+.rails li {
+  margin-bottom: 10px;
+}
+
+
+.breadcrumbs {
+  margin: 20px;
+}
+
+.products {
+  display: flex;
+  margin: 10px;
+}
+
+.card {
+  margin: 10px
+}
