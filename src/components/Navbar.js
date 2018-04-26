@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from './Logo';
+import LogoTitle from './LogoTitle';
 import NavCart from './NavCart';
 
 let Navbar = () =>
   <nav>
     <div className="nav-wrapper">
-      <Logo />
+      <LogoTitle />
       <NavCart />
     </div>
   </nav>

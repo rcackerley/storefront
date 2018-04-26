@@ -1,12 +1,14 @@
 import React from 'react';
 import BreadCrumb from './BreadCrumb';
-import Products from './Products';
+import ProductSmallSlider from './ProductSmallSlider';
+import { withRouter } from 'react-router-dom';
 
 
-let MainRail = () =>
-  <div>
+let MainRail = (props) =>
+  <div className="full">
     <BreadCrumb />
-    <Products />
+    <ProductSmallSlider />
   </div>
+let MainRailContainer = withRouter(MainRail);
 
-export default MainRail;
+export default MainRailContainer;

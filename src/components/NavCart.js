@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {Icon} from 'react-materialize'
+import Badges from './Badges';
 
 let NavCart = () =>
-  <ul id="nav-mobile" className="right">
+  <ul id="nav-mobile" className="right flex-me">
     <li>
-      <Link to="#"><Icon>person</Icon></Link>
+      <Link to="/login"><Icon>person</Icon></Link>
     </li>
     <li>
-      <Link to="#"><Icon>shopping_cart</Icon></Link>
+      <Link to="/cart"><Icon>shopping_cart</Icon><Badges /></Link>
     </li>
   </ul>
 

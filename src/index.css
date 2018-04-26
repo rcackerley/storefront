@@ -2,21 +2,37 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height:100%;
 }
 
 .grid-layout {
   display: flex;
 
 }
+a img {
+  display: flex;
+  padding-top:5px;
+}
+.brand-logo img {
+  width: 50px;
+  margin-right: 10px;
+}
 
 nav {
-  background-color: #5b5657;
+  background-color: #b83c3f;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.brand-logo {
-  margin-left: 20px
+nav .brand-logo {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 20px;
 }
 
 .rails {
@@ -33,14 +49,235 @@ nav {
 
 
 .breadcrumbs {
-  margin: 20px;
+  padding: 20px;
+  background-color: black;
+}
+
+.breadcrumbs a {
+  color: white;
 }
 
 .products {
   display: flex;
   margin: 10px;
+  flex-wrap:wrap;
 }
 
 .card {
   margin: 10px
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product img {
+  width: 150px;
+}
+
+button {
+  background: #b83c3f;
+  border: none;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #ad9e6e;
+}
+
+button i {
+  margin-left: 10px
+}
+
+.hero-image {
+  background-image: radial-gradient(circle at center, rgba(0, 00, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) ), url('https://league-mp7static.mlsdigital.net/styles/image_landscape/s3/images/stadium_0.jpg?81ByAV1z40B7DF22xDxuRCwkTcsncje.&itok=pyBUmCXs&c=3af1677d0e290aab769ccd5bee3b01bc');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.atl-logo {
+  width: 100%;
+}
+
+h4 {
+  margin-left: 20px;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid black;
+  display: inline-block;
+}
+
+a h4 {
+  color: #b83c3f;
+}
+
+.products-slider {
+  margin-bottom: 50px;
+  overflow-x: auto;
+}
+
+.flex-me {
+  display: flex;
+  margin-right: 20px;
+}
+
+.flex-me a {
+  color: white;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  padding-top: 10px;
+}
+ul {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 0;
+  padding-top: 20px;
+  color: black;
+}
+
+.full {
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+table {
+  width: 600px;
+}
+
+td img {
+  width: 75px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #b83c3f;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #b83c3f;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #b83c3f;
+  text-decoration: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #b83c3f;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #b83c3f;
+    -webkit-box-shadow: 0 1px 0 0 #b83c3f;
+    box-shadow: 0 1px 0 0 #b83c3f;
 }

@@ -1,16 +1,13 @@
 import React from 'react';
+import AddToCartButton from './AddToCartButton';
 
 let Product = ({product}) =>
-  <div className="card dark darken-1">
-    <div className="card-content dark-text">
-      <span className="card-title">Card Title</span>
-      <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-    </div>
-    <div className="card-action">
-      <a href="#">Add to Cart</a>
-      <a href="#">This is a link</a>
-    </div>
+  <div className="product">
+    <img src={`${product.img}`} />
+    <h5>{product.name}</h5>
+    <span>{product.price}</span>
+    <p>{product.desc}</p>
+    <AddToCartButton product={product} />
   </div>
 
 
