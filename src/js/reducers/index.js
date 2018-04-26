@@ -1,10 +1,11 @@
-import { removeFromCart, addToCart, handleUsername, handlePassword, handleEmail, createAccount} from '../actions/index';
+import { removeFromCart, addToCart, handleUsername, handlePassword, handleEmail, createAccount, setToken} from '../actions/index';
 import cartWithQuantity from '../../lib/index';
 import {createUser} from '../../ajax/index';
 
 const initialState = {
   categories: ['gear', 'tickets', 'sports'],
   cart: [],
+  token: null,
   typedUsername: '',
   typedPassword: '',
   typedEmail: '',
@@ -115,6 +116,9 @@ const reducerRoutes = {
     createUser(user)
     return {...state}
   },
+  [setToken]: (state, action) => ({
+    ...state, token: action.payload
+  }),
   default: (state, action) => state
 }
 

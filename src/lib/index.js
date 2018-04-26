@@ -1,6 +1,6 @@
 let cartWithQuantity = (cart, newProduct) => {
   if (cart.includes(newProduct)) {
-    console.log(true);
+    // console.log(true);
     let newCart = cart.map(product => {
       if (product.id === newProduct.id) {
         product.quantity += 1;
@@ -11,10 +11,9 @@ let cartWithQuantity = (cart, newProduct) => {
     })
     return newCart;
   } else {
-    console.log(false);
+    // console.log(false);
     newProduct.quantity = 1;
-    cart.push(newProduct);
-    return cart;
+    return [...cart, newProduct];
   }
 }
 

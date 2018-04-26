@@ -4,6 +4,7 @@ import HomePage from './components/HomePage';
 import ProductScreen from './components/ProductScreen'
 import MyCart from './components/MyCart';
 import LoginScreen from './components/LoginScreen';
+import SignInScreen from './components/SignInScreen';
 
 let RouterComp = () =>
   <Router>
@@ -13,7 +14,8 @@ let RouterComp = () =>
       <Route path="/tickets" component={ProductScreen} />
       <Route path="/sports" component={ProductScreen} />
       <Route path="/cart" component={MyCart} />
-      <Route path="/login" component={LoginScreen} />
+      <Route exact path="/login" component={LoginScreen} />
+      <Route path="/signin" component={SignInScreen} />
     </div>
   </Router>
 

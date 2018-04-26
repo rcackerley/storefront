@@ -30,10 +30,16 @@ export const addToCart = product =>
       type: createAccount.toString(),
       payload: user
     })
+  export const setToken = token =>
+    ({
+      type: setToken.toString(),
+      payload: token
+    })
 
 addToCart.toString = () => 'ADD_TO_CART';
 removeFromCart.toString = () => 'REMOVE_FROM_CART';
 handleUsername.toString = () => 'HANDLE_USERNAME';
 handlePassword.toString = () => 'HANDLE_PASSWORD';
 handleEmail.toString = () => 'HANDLE_EMAIL';
-createAccount.toString = () => 'CREATE_ACCOUNT'
+createAccount.toString = () => 'CREATE_ACCOUNT';
+setToken.toString = () => 'SET_TOKEN';
