@@ -35,6 +35,11 @@ export const addToCart = product =>
       type: setToken.toString(),
       payload: token
     })
+  export const setProducts = products =>
+    ({
+      type: setProducts.toString(),
+      payload: products
+    })
 
 addToCart.toString = () => 'ADD_TO_CART';
 removeFromCart.toString = () => 'REMOVE_FROM_CART';
@@ -43,3 +48,4 @@ handlePassword.toString = () => 'HANDLE_PASSWORD';
 handleEmail.toString = () => 'HANDLE_EMAIL';
 createAccount.toString = () => 'CREATE_ACCOUNT';
 setToken.toString = () => 'SET_TOKEN';
+setProducts.toString = () => 'SET_PRODUCTS';

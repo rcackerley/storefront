@@ -2,9 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 let Profile = ({token}) => {
-  console.log(token)
   if (token) {
-    console.log(token.user.username)
     return <span>{token.user.username}</span>
   } else {
     return null

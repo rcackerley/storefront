@@ -1,4 +1,4 @@
-import { removeFromCart, addToCart, handleUsername, handlePassword, handleEmail, createAccount, setToken} from '../actions/index';
+import { removeFromCart, addToCart, handleUsername, handlePassword, handleEmail, createAccount, setToken, setProducts} from '../actions/index';
 import cartWithQuantity from '../../lib/index';
 import {createUser} from '../../ajax/index';
 
@@ -118,6 +118,9 @@ const reducerRoutes = {
   },
   [setToken]: (state, action) => ({
     ...state, token: action.payload
+  }),
+  [setProducts]: (state, action) => ({
+    ...state, products: action.payload
   }),
   default: (state, action) => state
 }
